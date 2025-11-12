@@ -52,6 +52,14 @@ namespace PracticeDB1.Services
             dbContext.SaveChanges();
             Console.WriteLine("Students added!");
         }
+        public void GetAllStudents()
+        {
+            foreach (var item in dbContext.Students)
+            {
+                Console.WriteLine(item.FirstName);
+            }
+        }
     }
+
 
 }

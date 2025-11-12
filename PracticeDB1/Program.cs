@@ -8,7 +8,7 @@ namespace PracticeDB1
         {
             StudentService service = new StudentService();
 
-            service.AddStudents();
+            service.GetAllStudents();
         }
     }
 }
