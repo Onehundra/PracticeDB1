@@ -1,10 +1,14 @@
-﻿namespace PracticeDB1
+﻿using PracticeDB1.Services;
+
+namespace PracticeDB1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            StudentService service = new StudentService();
+
+            service.AddStudents();
         }
     }
 }
